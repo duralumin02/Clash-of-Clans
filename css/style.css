@@ -33,9 +33,19 @@
   align-items: center;
 }
 .navigation .logo {
-  width: 200px;
+  background-image: url("../assets/coc_logo-removebg-preview.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 190px;
+  height: 100px;
   cursor: pointer;
 }
+.navigation i {
+  display: none;
+  cursor: pointer;
+}
+
 .navigation ul {
   user-select: none;
 }
@@ -43,10 +53,10 @@
   list-style-type: none;
   display: inline-block;
   user-select: none;
+  margin-left: 12px;
 }
 .navigation li a {
   display: inline-block;
-  width: 100px;
   color: var(--dark);
   font-size: 20px;
   text-decoration: none;
@@ -66,6 +76,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 20px 60px;
 }
@@ -147,6 +158,9 @@
 
 /* Gallery */
 
+.gallery-content {
+  margin-bottom: 40px;
+}
 .gallery-content h1 {
   position: relative;
   font-size: 2.5rem;
@@ -196,7 +210,7 @@
   grid-row: span 2;
 }
 .gallery-gp img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   border-radius: 2px;
 }
 
@@ -215,7 +229,17 @@
   margin-bottom: 20px;
   text-align: center;
 }
+.mySwiper2 {
+  width: 100%;
+  height: 100%;
+  padding: 200px 18px 50px 18px;
+}
 
+.mySwiper2 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card-container {
   margin: auto;
   display: flex;
@@ -380,17 +404,6 @@
 .mySwiper2 .swiper-slide:nth-child(11) .card .cart-angle {
   right: -51px;
 }
-.mySwiper2 {
-  width: 100%;
-  height: 100%;
-  padding: 200px 18px 50px 18px;
-}
-
-.mySwiper2 .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* pets */
 .pet-container {
@@ -516,7 +529,7 @@
 .download {
   display: flex;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   width: 90%;
   margin: auto;
 }
@@ -733,7 +746,6 @@
 /* news archive */
 .news-container .news-archive {
   width: 40%;
-  /* background-color: yellow; */
 }
 .news-container .news-archive h2 {
   text-align: end;
@@ -795,7 +807,8 @@
 
 /* tournament */
 .match {
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  margin: 100px 0 100px 0;
   padding: 20px;
   background-color: var(--yellow);
 }
@@ -917,9 +930,9 @@
   margin-top: 50px;
 }
 .video-container {
+  position: relative;
   width: 85%;
   margin: auto;
-  position: relative;
 }
 .video-player {
   position: absolute;

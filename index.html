@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clash Of Clans</title>
+    <link
+      rel="icon"
+      href="./assets/mobile-logo.png"
+      type="image/png"
+      sizes="16x16"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -16,19 +21,26 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="script.js" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Clash Of Clans</title>
   </head>
   <body>
     <div class="circle"></div>
     <nav class="navigation" id="home">
-      <img class="logo" src="./assets/coc_logo-removebg-preview.png" alt="" />
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#videos">Video</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="logo"></div>
+      <div class="bars">
+        <span class="bar-one"></span>
+        <span class="bar-two"></span>
+        <span class="bar-three"></span>
+      </div>
+
+      <ul class="nav-item">
+        <li onclick="slide()"><a href="#">Home</a></li>
+        <li onclick="slide()"><a href="#products">Products</a></li>
+        <li onclick="slide()"><a href="#news">News</a></li>
+        <li onclick="slide()"><a href="#videos">Video</a></li>
+        <li onclick="slide()"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="content">
@@ -39,8 +51,7 @@
           veritatis enim dolor. Mollitia blanditiis ad quo ratione. Nisi,
           laborum! Cupiditate laudantium obcaecati quos ipsam velit voluptatibus
           eum, vitae quam similique! Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Ad fuga consequatur inventore minima recusandae,
-          quod, doloribus
+          adipisicing elit.
         </p>
         <button>See Details <i class="fa-solid fa-right-long"></i></button>
       </div>
@@ -944,23 +955,8 @@
     <a class="scroll-me" href="#home">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
-    <!-- customize js -->
-    <script>
-      let videoPlayer = document.getElementById("videoPlayer");
-      let myVideo = document.getElementById("myVideo");
 
-      function stopVideo() {
-        videoPlayer.style.display = "none";
-        myVideo.pause();
-      }
-
-      function playVideo(file) {
-        myVideo.src = file;
-        myVideo.play();
-        videoPlayer.style.display = "block";
-      }
-    </script>
-
+    <script src="js/script.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
