@@ -112,14 +112,14 @@
       <h1>Gallery</h1>
       <div class="gallery-gp">
         <img
-          class="grid-cols-span grid-rows-span"
+          class="grid-cols-span grid-rows-span gallery1"
           src="./assets/gallery/barbar.jpg"
           alt=""
         />
-        <img src="./assets/gallery/1.webp" alt="" />
-        <img src="./assets/gallery/wall-breaker.jpg" alt="" />
-        <img src="./assets/gallery/8.jpg" alt="" />
-        <img src="./assets/gallery/12.jpg" alt="" />
+        <img src="./assets/gallery/1.webp" alt="" class="gallery2" />
+        <img src="./assets/gallery/wall-breaker.jpg" alt="" class="gallery3" />
+        <img src="./assets/gallery/8.jpg" alt="" class="gallery4" />
+        <img src="./assets/gallery/12.jpg" alt="" class="gallery5" />
       </div>
     </section>
 
@@ -936,8 +936,8 @@
       <div class="bottom">
         <div class="foot-left">
           <ul>
-            <li><a href="">Supercell</a></li>
-            <li><a href="">Fan Content Policy</a></li>
+            <li><a href="#">Supercell</a></li>
+            <li><a href="#">Fan Content Policy</a></li>
           </ul>
         </div>
         <div class="foot-right">
@@ -987,6 +987,23 @@
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
         },
       });
     </script>
