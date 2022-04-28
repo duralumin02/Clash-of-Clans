@@ -1,7 +1,4 @@
 @media (max-width: 780px) {
-  .scroll-me {
-    display: none;
-  }
   .navigation {
     position: fixed;
     top: 0;
@@ -34,7 +31,7 @@
   .navigation ul {
     position: absolute;
     width: 100vw;
-    top: -360px;
+    top: -365px;
     left: 0;
     z-index: -200;
     transition: 0.5s ease-in-out;
@@ -45,7 +42,7 @@
     background-color: #eaeaea;
     text-align: center;
     padding: 20px 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #20202020;
     margin: 0;
   }
   .navigation li a {
@@ -278,7 +275,7 @@
     }
 
     .navigation .bars {
-      left: 29%;
+      left: 33%;
     }
     .navigation ul li a {
       margin-left: 0;
