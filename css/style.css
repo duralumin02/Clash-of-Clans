@@ -15,7 +15,10 @@
   font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
 }
-
+*::selection {
+  background-color: var(--yellow);
+  color: #fff;
+}
 .circle {
   position: absolute;
   width: 100%;
