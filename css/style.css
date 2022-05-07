@@ -834,6 +834,7 @@
   padding: 30px 20px;
   margin-left: 12%;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .left-team,
 .right-team {

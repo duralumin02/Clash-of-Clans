@@ -264,6 +264,11 @@
   }
   /* mobile */
   @media (max-width: 375px) {
+    .scroll-me {
+      position: fixed;
+      left: 10px;
+      bottom: 10px;
+    }
     .circle {
       clip-path: circle(70.7% at 100% 8%);
     }
